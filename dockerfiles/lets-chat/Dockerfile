@@ -10,8 +10,9 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir scripts
 ADD scripts scripts
 ADD $EXTRACT_VCAP_URL scripts/extract-vcap.py
+RUN chmod +r scripts/extract-vcap.py
 
 USER node
 
-CMD ["/usr/src/app/scripts/start-server.sh"]
+CMD ["scripts/start-server.sh"]
 
