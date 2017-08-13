@@ -1,0 +1,22 @@
+# Default values for lets-chat.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+image:
+  repository: sdelements/lets-chat
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  name: lets-chat
+  tier: frontend
+  type: NodePort
+  protocol: TCP
+  internalPort: 8080
+  externalPort: 8080
+mongo:
+  host: mongo-asdf
+resources:
+  limits:
+    memory: 128Mi
+  requests:
+    memory: 128Mi

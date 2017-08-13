@@ -1,0 +1,9 @@
+apiVersion: v1
+description: A Helm chart for Kubernetes that creates a PoC-level deployment of Mongo.
+name: mongo
+version: 0.1.0
+sources:
+  - https://hub.docker.com/r/library/mongo/
+maintainers:
+  - name: Rick Osowski
+    email: osowskeee@gmail.com

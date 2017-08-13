@@ -1,0 +1,20 @@
+# Default values for mongo.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+image:
+  repository: mongo
+  tag: 3.5.11
+  pullPolicy: IfNotPresent
+service:
+  name: mongo
+  tier: backend
+  type: ClusterIP
+  protocol: TCP
+  externalPort: 27017
+  internalPort: 27017
+resources:
+  limits:
+    memory: 128Mi
+  requests:
+    memory: 128Mi
