@@ -15,6 +15,6 @@ service:
   internalPort: 27017
 resources:
   limits:
-    memory: 128Mi
+    memory: 512Mi
   requests:
     memory: 128Mi

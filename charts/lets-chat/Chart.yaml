@@ -1,7 +1,7 @@
 apiVersion: v1
 description: A Helm chart for Kubernetes that creates a PoC-level deployment of Let's Chat and Mongo.
 name: lets-chat
-version: 0.1.0
+version: 0.1.1
 sources:
   - https://github.com/sdelements/lets-chat
   - https://hub.docker.com/r/library/mongo/
